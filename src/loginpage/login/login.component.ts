@@ -46,7 +46,8 @@ export class LoginComponent {
       this.overAllUser.forEach((res: any, ind ) => {
         if (this.loginForm.get('userName').value == res.name && this.loginForm.get('passWord').value === res.passWord) {
           userData.push(res)
-          this.showData = true;
+          // this.showData = true;
+          this.route.navigate(['/home-page'])
 
         } else {
           this.invalide = true
