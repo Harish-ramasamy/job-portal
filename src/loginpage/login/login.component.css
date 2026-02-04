@@ -8,6 +8,9 @@ body{
     gap: 24px; */
     box-shadow: #FFD580;
     border-radius: 8px;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
 }
 header{
     padding: 21px 0;
@@ -34,17 +37,24 @@ input{
     font-size: 16px;
 
 }
+.d-blk{
+    display: block;
+}
+.d-non{
+    display: none;
+}
 section{
     display: flex;
     justify-content: center;
     gap: 32px;
+    max-height: 48px;
 }
 .inputwrap{
     display: flex;
     flex-direction: column;
 }
 .pass{
-    padding-left: 7px;
+    padding-left: 19px;
 }
 a{
     text-decoration: none;
@@ -58,6 +68,28 @@ footer{
     /* gap: 32px; */
 }
 
+span {
+    text-align: left;
+    color: red;
+}
+.eye svg{
+    color: black;
+    max-width: 14px;
+    height: 14px;
+}
+
+.eye {
+     position: relative;
+     right: 18px;
+     top: 2px;
+}
+
+.text-icon{
+
+}
+footer a{
+    cursor: pointer;
+}
 footer button{
     width: 68px;
     height: 30px;
