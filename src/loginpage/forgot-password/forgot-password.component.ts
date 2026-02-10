@@ -1,6 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { FormControl, FormGroup, FormsModule, ReactiveFormsModule, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-forgot-password',
@@ -13,7 +14,7 @@ export class ForgotPasswordComponent {
   email: any;
   forgetForm: any;
   otpSent: boolean = false;
-  constructor(){
+  constructor(private router:Router){
     this.forgetForm = new FormGroup({
       email: new FormControl('', Validators.email),
       otp: new FormControl('', Validators.required)
@@ -31,5 +32,6 @@ export class ForgotPasswordComponent {
 
   varifyOtp(){
     this.otpSent = true
+    this.router.navigateByUrl('/home-page')
   }
 }

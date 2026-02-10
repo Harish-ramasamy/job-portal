@@ -28,6 +28,7 @@ main{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     gap: 44px;
     padding: 32px 0;
 }
@@ -108,4 +109,23 @@ footer button{
 
 a:hover{
     text-decoration: underline;
+}
+
+@media (max-width: 425px) {
+    body{
+        width: 100%;
+        height: 516px;
+    }
+    section {
+        max-width: 216px;
+        flex-direction: column;
+        align-items: center;
+    }
+    input{
+        font-size: 14px;
+    }
+    .eye {
+        bottom: 21px;
+        left: 193px;
+    }
 }
