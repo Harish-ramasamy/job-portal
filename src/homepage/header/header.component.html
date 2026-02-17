@@ -15,16 +15,16 @@
                 <nav class="nav">
                     <ul class="ulist d-flex">
                         <li class="list text-truncate">
-                            <a class="ancher mw-100" href="home-page">Home</a>
+                            <a class="ancher mw-100" (click)="routerFn('home-page')">Home</a>
                         </li>
                         <li class="list text-truncate">
-                            <a class="ancher mw-100" href="products">Products</a>
+                            <a class="ancher mw-100" (click)="routerFn('products')">Products</a>
                         </li>
                         <li class="list text-truncate">
-                            <a class="ancher mw-100" href="#">About us</a>
+                            <a class="ancher mw-100" (click)="routerFn('about-us')">About us</a>
                         </li>
                         <li class="list text-truncate">
-                            <a class="ancher mw-100" href="#">Blog</a>
+                            <a class="ancher mw-100" (click)="routerFn('blog')">Blog</a>
                         </li>
                     </ul>
                 </nav>
@@ -37,7 +37,7 @@
                         <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
                     </svg>
                 </span>
-                <span class="profl d-flex">
+                <span class="profl d-flex" (click)="tologin()">
                     <svg class="mw-20" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                         fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                         stroke-linejoin="round">

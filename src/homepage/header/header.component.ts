@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-header',
@@ -11,7 +12,7 @@ import { Component } from '@angular/core';
 export class HeaderComponent {
 
   showGlbSrchFlg: boolean = false;
-  constructor(){
+  constructor(public router: Router){
 
   }
 
@@ -21,5 +22,13 @@ export class HeaderComponent {
     } else {
       this.showGlbSrchFlg = true;
     }
+  }
+
+  tologin(){
+    this.router.navigateByUrl('login')
+  }
+
+  routerFn(router: any){
+    this.router.navigateByUrl(router)
   }
 }
