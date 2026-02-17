@@ -15,10 +15,10 @@
                 <nav class="nav">
                     <ul class="ulist d-flex">
                         <li class="list text-truncate">
-                            <a class="ancher mw-100" href="#">Home</a>
+                            <a class="ancher mw-100" href="home-page">Home</a>
                         </li>
                         <li class="list text-truncate">
-                            <a class="ancher mw-100" href="#">Products</a>
+                            <a class="ancher mw-100" href="products">Products</a>
                         </li>
                         <li class="list text-truncate">
                             <a class="ancher mw-100" href="#">About us</a>
@@ -29,10 +29,18 @@
                     </ul>
                 </nav>
             </div>
-            <div class="nav_lft">
-                <span class="profl d-flex">
-                    <svg class="mw-20" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            <div class="nav_lft d-flex">
+                <span (click)="showGlbSrch()">
+                    <svg class="serch_icn" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
                         stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                    </svg>
+                </span>
+                <span class="profl d-flex">
+                    <svg class="mw-20" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
                         <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
                         <circle cx="12" cy="7" r="4"></circle>
                     </svg>
@@ -43,7 +51,7 @@
                 </span>
             </div>
         </div>
-        <div class="header_spc d-flex">
+        <div class="header_spc d-flex" *ngIf="showGlbSrchFlg">
             <input type="text" class="glbSrh">
         </div>
     </div>
