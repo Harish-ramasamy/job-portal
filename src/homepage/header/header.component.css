@@ -1,8 +1,127 @@
-body {
+/* body {
     position: absolute;
     top: 1px;
     width: 345px;
     background-color: aliceblue;
     height: 64px;
+
+} */
+
+.body{
+    width: 100wh;
+    height: 136px;
+}
+.nav {
+    max-width: 65%;
+    min-width: 40%;
+    padding-left: 16px;
+}
+.nav_body {
+    background-color: #23253b;
+    height: 40%;
+    text-align: center;
+    align-items: center;
+    margin: 0 auto;
+    justify-content: space-between;
+    column-gap: 36px;
+    box-shadow: 0px 3px 1px 1px #706f6f;
+}
+.company_name{
+    max-width: 146px;
+    font-family: Poppins, sans-serif;
+}
+.header_spc{
+    height: 50%;
+    background-color: #ebebeb;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.ulist{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    max-width: 100%;
+    column-gap: 46px;
+    align-items: center;
+}
+.list{
+    max-width: 126px;
+}
+.line{
+    width: 2px;
+    background-color: white;
+}
+.nav_rigt{
+    max-width: 70%;
+    min-width: 70%;
+    padding-left: 22px;
+    column-gap: 16px;
+}
+.nav_lft{
+    max-width: 126px;
+}
+.ancher{
+    text-decoration: none;
+    min-width: 72px;
+    color: #cfcfcf;
+    font-family: Poppins, sans-serif;
+    font-size: 16px;
+    transition: all 0.5s, font-size 0.6s;
+}
+
+.profl{
+    /* color: white; */
+    color: #cfcfcf;
+    padding-right: 22px;
+    max-width: 152px;
+    cursor: pointer;
+}
+.glbSrh{
+    width: 50%;
+    height: 32px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 1px 1px #bfbfbf;
+    border: none;
+}
+
+.ancher:hover {
+    color: white;
+    text-decoration: none;
+    /* border: none; */
+    font-size: 18px;
+    box-shadow: 0px 2px 0px 0px #cfcfcf;
+}
+
+.ancher:active{
+    color: white;
+    text-decoration: underline;
+}
+.glbSrh:active{
+    border: none;
+}
+
+@media (max-width: 426px) {
+    .nav_body{
+        background-color: #23253b;
+        justify-content: space-between;
+        padding: 0 8px;
+    }
+    .side_menu{
+        display: flex !important;
+        color: white;
+    }
+    .company_name{
+        text-align: left;
+        padding-right: 12px;
+        max-width: 146px !important;
+    }
+    .nav, .profl, .line{
+        display: none !important;
+    }
+    .proimg{
+        display: inline-block !important;
+        max-width: 35px !important;
+    }
 
 }
