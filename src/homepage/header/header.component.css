@@ -43,7 +43,7 @@
 
 .list {
     max-width: 126px;
-    min-width: 100px
+    min-width: 100px;
 }
 
 .line {
@@ -181,4 +181,10 @@
         height: 28px;
     }
 
+}
+
+@media (max-width: 769px) {
+    .list{
+        min-width: 64px !important;
+    }
 }
